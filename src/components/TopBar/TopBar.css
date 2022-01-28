@@ -1,0 +1,54 @@
+.Profile-Baba-Logo{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: center;
+    background: #FB802A;
+    border-bottom: #4285f4 2px solid;
+    z-index: 999;
+    position: relative;
+}
+  
+.Profile-Baba-Logo::before{
+    content: '';
+    background: linear-gradient(
+    90deg, rgb(251, 128, 42) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 37%, rgb(255, 255, 255) 78%, rgb(251, 128, 42) 100%);
+    display: block;
+    width: 270px;
+    height: 92px;
+    position: absolute;
+    top: -2px;
+    z-index: -1;
+}
+
+.Profile-Baba-Logo > div{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.Profile-Baba-Logo > img{
+    width: 50px;
+    height: 70px;
+}
+
+.title-profile{
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+    color: #4285f4;
+}
+
+.title-baba{
+    padding-left: 5px;
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+    color: #ea4335;
+}
+
+.short-title{
+    top: 58px;
+    left: 52%;
+    position: absolute;
+    font-size: 13px;
+    font-family: 'Concert One', cursive;
+}
+  

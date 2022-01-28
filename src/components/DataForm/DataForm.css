@@ -1,0 +1,279 @@
+/* Region image Selector Div */
+.region-image-range{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Region Div */
+.auto-complete-div{
+    display: flex;
+}
+
+.auto-complete-label{
+    margin-right: 10%;
+    padding-top: 3px;
+}
+
+input.auto-complete-input{
+    width: 150%;
+    padding: 5px 10px;
+    outline: none;
+    border: solid grey 1px;
+    margin-left: -60%;
+}
+
+.region-dropDown{
+    position: absolute;
+    margin-top: 2px;
+    border-radius: 10px;
+    min-width: 30%;
+    left: 20%;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
+.dropDown-item{
+    font-size: 13px;
+    padding: 10px 30px 10px 30px;
+}
+
+.region-dropDown .dropDown-item:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+
+.region-dropDown .dropDown-item:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+/* Image Upload Css */
+.image-range-selector{
+    padding-top: 3px;
+    margin-left: 60px;
+}
+
+.image-range-selector > input{
+    width: auto;
+    height: auto;
+}
+  
+.image-range-selector > label{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+/* Image Viewer */
+.main-imageCollecter{
+    border: solid black 1px;
+}
+
+.img-container{
+    width: 800px;
+    height: 559px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: solid #00000061 1px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+img.my-img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Data Form Css */
+.components{
+    display: flex;
+}
+
+.main-dataForm{
+    margin-left: 6px;
+    padding: 10px;
+    width: 35%;
+    max-height: 538.5px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.content-div{
+    padding: 10px;
+    margin: 5px 1px 20px 1px;
+    background-color: #cac6c62e;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 3px rgb(0 0 0 / 15%);
+}
+
+.content-div > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.category_div input.category-input{
+    width: 60%;
+}
+
+.category_div .category-label{
+    padding-right: 12px;
+}
+
+.phone-el .phone-label{
+    padding-right: 3px;
+}
+
+.content-div input{
+    margin: 3px;
+    width: 70%;
+    font-size: 18px;
+}
+
+.content-div > div > label{
+    padding-top: 3.5px;
+}
+
+.Shop{
+    display: flex;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    padding: 5px;
+    justify-content: center;
+}
+
+.Shop > p{
+    margin: 0px;
+    width: 60%;
+    border: dotted black 1px;
+    padding: 2px;
+    border-radius: 3px 0 0 3px;
+}
+
+.Shop > button{
+    height: 25px;
+    background-color: #000000d4;
+    color: white;
+    border: solid black 2px;
+    border-radius: 0 3px 3px 0;
+    font-size: 15px;
+}
+
+.save-button, .submit-button{
+    margin-top: 5%;
+    bottom: 10%;
+    background-color: #219653;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.submit-button{
+    margin-top: 55%;
+}
+
+.delete-box{
+    justify-content: center !important;
+    padding-top: 10px;
+}
+
+.delete-box > button {
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: #dd3030;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+}
+
+button.add-phones{
+    margin-top: 2.2px;
+    width: 28px;
+    height: 28px;
+    font-size: 25px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: #4285f4;
+    color: white;
+    padding: 0px;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+}
+
+.phone-el > input{
+    width: 60%;
+}
+
+
+/* Category DropDown */
+.category-options{
+    width: 25%;
+    height: 60%;
+    font-size: 15px;
+    overflow: auto;
+    position: absolute;
+    right: 7%;
+    margin-top: 32px;
+    padding: 5px 1px;
+    background-color: #e6e6e6;
+}
+
+.category-options .options{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 10px;
+    margin: 1px;
+    overflow: auto;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.category-options .options .options-item:last-child{
+    font-size: 10px;
+}
+
+
+/* Select and Options */
+select.category-input{
+    width: 62%;
+}
+
+select > option{
+    height: 20%;
+}
+
+select > option.main-options{
+    color: black;
+    font-size: 14px;
+}
+
+select > option.sub-options{
+    color: rgb(104, 103, 103);
+    font-size: 13px;
+}
+
+select option:disabled {
+    color: black;
+    font-weight: bold;
+}
+
+/* Show Error */
+p.show-error{
+    margin: 10% 0 0 0;
+    color: red;
+}
+
+span.show-error{
+    color: red;
+}
+
+.save-next-button{
+    display: flex;
+    justify-content: space-evenly;
+}
