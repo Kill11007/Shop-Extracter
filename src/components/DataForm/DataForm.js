@@ -46,10 +46,9 @@ function DataForm() {
 
     // Image Upload Handler
     const imageHandler = (event) => {
-        var files = [];
-        Object.entries(event.target.files).map((val) => {
-            files.push(URL.createObjectURL(val[1]))
-        });
+        var files = Object.entries(event.target.files).map((val) => {
+                return URL.createObjectURL(val[1])
+            });
 
         setSelectedFile([...files]);
         setmyShops([initialShop]);
@@ -91,12 +90,10 @@ function DataForm() {
     // Validate phone no
     const validatePhoneNumber = (e) => {
         let val = e.target.value;
-        let valid = false;
 
         // Api request check if phone exits in database or not
         axios.post('https://profilebaba.com/api/user-validate', { "phone_number": val })
             .then(res => {
-                valid = res.data.success;
                 if (res.data.success === false) {
                     setError('Phone not valid');
                 }
@@ -160,16 +157,16 @@ function DataForm() {
         }
 
         // Check if category is empty
-        for (var i = 0; i < myShops.length; i++) {
-            validateCategory = myShops[i].category.some((val) => { return val === '' }) ? false : true;
+        for (var j = 0; j < myShops.length; j++) {
+            validateCategory = myShops[j].category.some((val) => { return val === '' }) ? false : true;
             if (validateCategory === false) {
                 break;
             }
         }
 
         // Check if Shop name is empty
-        for (var i = 0; i < myShops.length; i++) {
-            if (myShops[i].shopName === '') {
+        for (var k = 0; k < myShops.length; k++) {
+            if (myShops[k].shopName === '') {
                 validateShopName = false;
                 break;
             }
@@ -301,7 +298,7 @@ function DataForm() {
             <div className='components'>
                 {/* Image Viewer */}
                 <div className='img-container' key={selectedFile}>
-                    <img className='my-img' src={(selectedFile.length > 0) ? (imgCount >= selectedFile.length ? finalImage : selectedFile[imgCount]) : initialImage} />
+                    <img className='my-img' src={(selectedFile.length > 0) ? (imgCount >= selectedFile.length ? finalImage : selectedFile[imgCount]) : initialImage} alt='upload-images' />
                 </div>
 
                 {/* Form Data */}
