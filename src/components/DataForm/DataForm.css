@@ -297,18 +297,31 @@ span.show-error{
 /* Media Queries */
 
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-    
+@media screen and (max-width: 1200px) {
+    .auto-complete-container {
+        display: block;
+    }
+
+    /* .save-button, .submit-button {
+        margin: 5% 5%;
+        font-size: 15px;
+    } */
+
   }
   
   /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 655px) {
+  @media screen and (max-width: 880px) {
     .components {
         display: block;
     }
 
     .region-image-range {
         display: block;
+    }
+
+    .auto-complete-container {
+        align-items: center;
+        justify-content: center;
     }
 
     .img-container {
@@ -330,6 +343,7 @@ span.show-error{
         display: flex;
         padding-top: 20px;
         margin-left: 0;
+        justify-content: center;
     }
 
     .image-range-selector > input {
