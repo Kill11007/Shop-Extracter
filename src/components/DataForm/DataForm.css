@@ -7,21 +7,24 @@
 }
 
 /* Region Div */
+.auto-complete-container{
+    display: flex;
+}
+
 .auto-complete-div{
     display: flex;
 }
 
 .auto-complete-label{
-    margin-right: 10%;
-    padding-top: 3px;
+    padding: 4px 10px;
 }
 
 input.auto-complete-input{
-    width: 150%;
+    width: 15rem;
     padding: 5px 10px;
     outline: none;
     border: solid grey 1px;
-    margin-left: -60%;
+    /* margin-left: -60%; */
 }
 
 .region-dropDown{
@@ -29,7 +32,7 @@ input.auto-complete-input{
     margin-top: 2px;
     border-radius: 10px;
     min-width: 30%;
-    left: 20%;
+    left: 25%;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
 }
 
@@ -282,3 +285,60 @@ span.show-error{
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 655px) {
+    .components {
+        display: block;
+    }
+
+    .region-image-range {
+        display: block;
+    }
+
+    .img-container {
+        width: auto;
+        height: auto;
+    }
+
+    .main-dataForm {
+        margin: 6px;
+        width: auto;
+        overflow: inherit;
+    }
+
+    .save-next-button {
+        padding-bottom: 10%;
+    }
+
+    .image-range-selector {
+        display: flex;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    .image-range-selector > input {
+        margin-left: 10px;
+    }
+
+    .image-range-selector > label {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+  }

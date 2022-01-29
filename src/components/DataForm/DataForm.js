@@ -259,7 +259,6 @@ function DataForm() {
         <>
             <div className='region-image-range'>
                 {/* // Select Region */}
-                <label className='auto-complete-label' htmlFor='my-input'>Region :</label>
                 <PlacesAutocomplete
                     value={region}
                     onChange={setregion}
@@ -267,8 +266,10 @@ function DataForm() {
                 >
                     {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
                         <div>
-                            <input className='auto-complete-input' id='my-input' name='my-input' {...getInputProps({ placeholder: "Type Region" })} />
-
+                            <div className='auto-complete-container'>
+                                <label className='auto-complete-label' htmlFor='my-input'>Region :</label>
+                                <input className='auto-complete-input' id='my-input' name='my-input' {...getInputProps({ placeholder: "Type Region" })} />
+                            </div>
                             <div className='region-dropDown'>
                                 {loading ? <div>...loading</div> : null}
 
