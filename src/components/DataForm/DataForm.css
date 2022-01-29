@@ -301,18 +301,16 @@ span.show-error{
     .auto-complete-container {
         display: block;
     }
-
-    /* .save-button, .submit-button {
-        margin: 5% 5%;
-        font-size: 15px;
-    } */
-
   }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 880px) {
     .components {
         display: block;
+    }
+
+    .auto-complete-container {
+        display: flex;
     }
 
     .region-image-range {
