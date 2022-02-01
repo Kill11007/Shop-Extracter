@@ -17,6 +17,11 @@
 
 .auto-complete-label{
     padding: 4px 10px;
+    width: 5rem;
+}
+
+.content-div > div > label.shop-delet{
+    width: auto;
 }
 
 input.auto-complete-input{
@@ -112,32 +117,26 @@ img.my-img{
 
 .content-div > div{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 2px;
+    align-items: center;
 }
 
 .category_div input.category-input{
     width: 60%;
 }
 
-.category_div .category-label{
-    padding-right: 12px;
-}
-
-.phone-el .phone-label{
-    padding-right: 3px;
-}
-
 .content-div input{
     margin: 3px;
-    width: 70%;
-    font-size: 15px;
+    width: 75%;
+    font-size: 19px;
     padding: 3px 5px;
     outline: none;
 }
 
 .content-div > div > label{
-    padding-top: 3.5px;
+    padding: 1px;
+    width: 25%;
+    text-align: left;
 }
 
 .Shop{
@@ -198,10 +197,10 @@ img.my-img{
 }
 
 button.add-phones{
-    margin-top: 2.2px;
-    width: 28px;
-    height: 28px;
-    font-size: 25px;
+    margin: 0 5px;
+    width: 5%;
+    height: 5%;
+    font-size: 24px;
     border-radius: 100%;
     border: none;
     outline: none;
@@ -212,7 +211,7 @@ button.add-phones{
 }
 
 .phone-el > input{
-    width: 60%;
+    width: 69%;
 }
 
 
@@ -246,8 +245,9 @@ button.add-phones{
 
 /* Select and Options */
 select.category-input{
-    width: 62%;
-    font-size: 15px;
+    margin: 3px;
+    width: 71%;
+    font-size: 19px;
     padding: 3px 5px;
     outline: none;
 }
@@ -351,6 +351,7 @@ span.show-error{
     .image-range-selector > label {
         padding-right: 0;
         padding-left: 0;
+        width: 10rem;
     }
 
   }

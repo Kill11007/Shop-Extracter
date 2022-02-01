@@ -292,7 +292,7 @@ function DataForm() {
                 {/* // Image Upload */}
                 <div className='image-range-selector'>
                     <label htmlFor='image'>Upload Images :</label>
-                    <input type="file" multiple accept="image/*" className='range-selector from' name="image" onChange={imageHandler} />
+                    <input id='image' type="file" multiple accept="image/*" className='range-selector from' name="image" onChange={imageHandler} />
                 </div>
             </div>
 
