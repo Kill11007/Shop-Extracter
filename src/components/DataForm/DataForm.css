@@ -354,4 +354,12 @@ span.show-error{
         width: 10rem;
     }
 
+    .content-div input, select.category-input {
+        font-size: 15px;
+    }
+
+    .content-div > div > label {
+        font-size: 0.9rem;
+    }
+
   }
